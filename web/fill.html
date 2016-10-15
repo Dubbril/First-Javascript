@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fill</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function fill1() {
+                var animal = ["elephant", "tiger", "cat", "dog"];
+                document.getElementById('output').innerHTML = animal.fill("dolphin");
+            }
+            function fill2() {
+                var animal = ["elephant", "tiger", "cat", "dog"];
+                document.getElementById('output').innerHTML = animal.fill("dolphin", 1);
+            }
+            function fill3() {
+                var animal = ["elephant", "tiger", "cat", "dog"];
+                document.getElementById('output').innerHTML = animal.fill("dolphin", 1, 3);
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test Fill
+        </div>
+        <div>
+            <button onclick="fill1()">
+                Click me Function 1
+            </button>
+        </div>
+        <div>
+            <button onclick="fill2()">
+                Click me Function 2
+            </button>
+        </div>
+        <div>
+            <button onclick="fill3()">
+                Click me Function 3
+            </button>
+        </div>
+    </body>
+</html>

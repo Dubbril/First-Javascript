@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Join</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var a = ['one', 'two', 'three'];
+            var myVar1 = a.join();
+            var myVar2 = a.join(', ');
+            var myVar3 = a.join(' + ');
+            var myVar4 = a.join('');
+            function testJoin(select) {
+                output.innerHTML = select;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test Join
+        </div>
+        <div>
+            <button onclick="testJoin(myVar1)">
+                Click Me 1
+            </button>
+            <button onclick="testJoin(myVar2)">
+                Click Me 2
+            </button>
+            <button onclick="testJoin(myVar3)">
+                Click Me 3
+            </button>
+            <button onclick="testJoin(myVar4)">
+                Click Me 4
+            </button>
+        </div>
+    </body>
+</html>

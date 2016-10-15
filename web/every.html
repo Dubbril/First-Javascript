@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Every</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function isBigEnough(element,index,array){
+                return element>=10;
+            }
+            function testEvery(){ 
+            var arr1 = [12,5,8,130,44].every(isBigEnough);
+            var arr2 = [12,54,18,130,44].every(isBigEnough);
+            document.getElementById('output').innerHTML=arr2;
+        }
+        </script>
+
+    </head>
+    <body>
+        <div id="output">
+            Test Every
+        </div>
+        <div>
+            <button onclick="testEvery()">
+                Click Me
+            </button>
+        </div>
+    </body>
+</html>

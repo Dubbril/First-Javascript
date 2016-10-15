@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Entries</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function myEntries(){
+                var arr = ['a','b','c'];
+                var eArr = arr.entries();
+                //console.log(eArr.next().value);
+                //console.log(eArr.next().value);
+                //console.log(eArr.next().value);
+                document.getElementById('output').innerHTML=console.log(eArr.next().values);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test Entries
+        </div>
+        <button onclick="myEntries()">
+            Click Me
+        </button>
+    </body>
+</html>

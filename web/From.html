@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>From</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var numbers = [4,16,9,25];
+            var summ = numbers.map(Math.sqrt);
+            myvar = Array.from(summ);
+            function testform(){
+                output.innerHTML=myvar;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test From
+        </div>
+        <div>
+            <button onclick="testform()">
+                Click Me
+            </button>
+        </div>
+    </body>
+</html>

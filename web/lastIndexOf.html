@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Last Index Of</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var arr = ["A", "B", "C", "D", "E", "A", "B", "C", "D", "E"];
+            var myvar = arr.lastIndexOf("99");
+            function testLastIndexOf() {
+                output.innerHTML = myvar;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test Last Index Of
+        </div>
+        <div>
+            <button onclick="testLastIndexOf()">
+                Click Me 
+            </button>
+        </div>
+    </body>
+</html>

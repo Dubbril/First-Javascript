@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Map</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var numbers = [4, 9, 16, 25];
+            var myvar = numbers.map(Math.sqrt);
+            function testMap() {
+                output.innerHTML = myvar;
+            }
+            function testMap2() {
+                output.innerHTML = numbers;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="output">
+            Test Map
+        </div>
+        <div>
+            <button onclick="testMap()">
+                Click  Me 1
+            </button>
+            <button onclick="testMap2()">
+                Click  Me 2
+            </button>
+        </div>
+    </body>
+</html>
